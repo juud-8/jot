@@ -8,6 +8,90 @@ body {
 	color: #111;
 }
 
+.hidden {
+	display: none !important;
+}
+
+/* Auth Styles */
+.auth-container {
+	text-align: center;
+}
+
+.auth-form {
+	max-width: 400px;
+	margin: 0 auto;
+	padding: 2rem;
+	border: 1px solid #eee;
+	border-radius: 8px;
+	background: #fafafa;
+}
+
+.auth-form h2 {
+	margin: 0 0 1.5rem;
+	color: #333;
+}
+
+.auth-form input {
+	display: block;
+	width: 100%;
+	padding: 0.75rem;
+	margin-bottom: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	box-sizing: border-box;
+	font: inherit;
+}
+
+.auth-form input:focus {
+	outline: none;
+	border-color: #999;
+}
+
+.auth-form button {
+	width: 100%;
+	margin-top: 0;
+}
+
+.auth-form p {
+	margin-top: 1rem;
+}
+
+.auth-form a {
+	color: #0066cc;
+	text-decoration: none;
+}
+
+.auth-form a:hover {
+	text-decoration: underline;
+}
+
+/* App Styles */
+.app-container {
+	width: 100%;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1.5rem;
+}
+
+.header h1 {
+	margin: 0;
+}
+
+#signOutBtn {
+	margin-top: 0;
+	padding: 0.5rem 1rem;
+	background: #dc3545;
+	border-color: #dc3545;
+}
+
+#signOutBtn:hover {
+	background: #c82333;
+}
+
 h1 {
 	color: #333;
 	margin: 0 0 1rem;
@@ -50,11 +134,47 @@ button:hover {
 
 ul {
 	margin-top: 1rem;
-	padding-left: 1.25rem;
+	padding-left: 0;
+	list-style: none;
 }
 
-li {
-	margin-bottom: 0.5rem;
+.note-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 0.75rem;
+	padding: 0.75rem;
+	background: #f8f9fa;
+	border: 1px solid #e9ecef;
+	border-radius: 6px;
+	transition: background-color 0.15s ease;
+}
+
+.note-item:hover {
+	background: #f1f3f4;
+}
+
+.note-content {
+	flex: 1;
+	margin-right: 0.5rem;
+	word-wrap: break-word;
+	line-height: 1.4;
+}
+
+.delete-btn {
+	margin: 0;
+	padding: 0.25rem 0.5rem;
+	background: #dc3545;
+	border-color: #dc3545;
+	font-size: 1.2rem;
+	line-height: 1;
+	min-width: auto;
+	flex-shrink: 0;
+}
+
+.delete-btn:hover {
+	background: #c82333;
+	opacity: 1;
 }
 
 
